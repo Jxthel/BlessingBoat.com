@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+
+    <!-- Boxicons CSS -->
+    <link 
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Blessing Boat Home</title>
+</head>
+<body>
+    <header>
+
+        <!--Navbar Logo-->
+        <div class="logo">
+            <img src="./img/BB_logo.png" alt="Logo" />
+        </div>
+
+
+
+    <!--Navbar-->
+    <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#join">Join Us</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#Participants">Participants</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    
+    <!--Home-->
+    <section id="home">
+        <h1>Welcome to Blessing Boat</h1>
+        <h2>Empowering Christian streamers on their journey to affiliation!</h2>
+        <p>At Blessing Boat, our mission is to unite Christian streamers and believers in a vibrant community that fosters personal growth and spiritual connection. We aim to amplify the reach of non-affiliated content creators by facilitating engaging events that draw new audiences, promote fellowship, and support the sharing of the Gospel through wholesome and meaningful content.<br>
+            <br> Our vision is to establish a nurturing platform where Christian creators can flourish and share their faith with the world. We aspire to bring together believers from all walks of life, creating lasting relationships and transformative experiences that enrich lives and communities through the power of shared faith and innovative content delivery.</p>
+    </section>
+
+
+
+
+
+
+
+    <!--Events clock-->
+    <section id="events">
+        <h1>Next Event</h1>
+        <h2>Saturday March 12th 2025</h2>
+        <p>Stay connected with our faith-filled streams and events!</p>
+        <div class="clock-container">
+            <div class="clock">
+                <div><span id="days">00</span><span class="label">Days</span></div>
+                <div><span id="hours">00</span><span class="label">Hours</span></div>
+                <div><span id="minutes">00</span><span class="label">Minutes</span></div>
+                <div><span id="seconds">00</span><span class="label">Seconds</span></div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        var countDownDate = new Date("April 12, 2025 00:00:00").getTime();
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+            if (distance < 0) {
+                clearInterval(x);
+                document.querySelector(".clock").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+    </section>
+
+
+
+
+
+
+
+
+    <!--Event Particpants-->
+
+    <section id="Participants">
+        <h1>Event Participants</h1>
+        <h2>Hear from our members about their experiences.</h2>
+        <div class="Participants">
+            <div class="swiper-container">
+          
+          
+          
+                <!-- Wrapper for slide 1 -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+
+                         <!-- Wrapper for slide 1 -->
+                        <img class="image" src="./img/Dino_dad.jpg" alt="">
+                        <p>Just a genuine pastor-man who games on occasion. Lengthier: Born a mid western farm boy. Went to Iowa State to study geology. Placed my faith and trust squarely on Jesus Christ. Became a missionary and pastor. Got married and have 6 kids. Now I lead a church and own a game store. Crazy!</p>
+                        
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+              
+                          <div class="details">
+                            <span class="name">Dino Dad</span>
+                          </div>
+
+                          <!-- Social icon -->
+                    <a href="https://www.twitch.tv/dinodad1965" target="_blank" class="social-icon">
+                        <img src="./img/twitch_2.png" alt="Twitch Icon" class="social-icon-img">
+                    </a>
+
+                    </div>
+          
+          
+          
+                    <!-- Wrapper for slide 2 -->
+                    <div class="swiper-slide">
+                        <!-- Slide content -->
+                        <img class="image" src="./img/mamabrickbuilds.jpeg" alt="">
+                        <p>Daughter of The King, supportive wife, and mother of six. Just here to sort and build Legos while connecting with people.</p>
+
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+              
+                          <div class="details">
+                            <span class="name">MamaBrickBuilds</span>
+                          </div>
+
+                           <!-- Social icon -->
+                    <a href="https://www.twitch.tv/mamabrickbuilds" target="_blank" class="social-icon">
+                        <img src="./img/twitch_2.png" alt="Twitch Icon" class="social-icon-img">
+                    </a>
+
+                    </div>
+          
+          
+                    <!-- Wrapper for slide 3 -->
+                    <div class="swiper-slide">
+                        <!-- Slide content -->
+                        <img class="image" src="./img/24.png" alt="">
+                        <p>We are a Digital Missionary sending agency. We know God is calling many to use their gifts and voices to have gospel conversations. We want to invite you to join others as friends on mission. We want to connect, create community, equip and mobilize you to do more together than you could alone. </p>
+
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+              
+                          <div class="details">
+                            <span class="name">thechurchdigital</span>
+                          </div>
+
+                           <!-- Social icon -->
+                    <a href="https://www.twitch.tv/thechurchdigital" target="_blank" class="social-icon">
+                        <img src="./img/twitch_2.png" alt="Twitch Icon" class="social-icon-img">
+                    </a>
+
+                    </div>
+          
+          
+                    <!-- Wrapper for slide 4 -->
+                    <div class="swiper-slide">
+                        <!-- Slide content -->
+                        <img class="image" src="./img/24.png" alt="">
+                        <p>We are a Digital Missionary sending agency. We know God is calling many to use their gifts and voices to have gospel conversations. We want to invite you to join others as friends on mission. We want to connect, create community, equip and mobilize you to do more together than you could alone. </p>
+
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+              
+                          <div class="details">
+                            <span class="name">thechurchdigital</span>
+                          </div>
+
+                           <!-- Social icon -->
+                    <a href="https://www.twitch.tv/thechurchdigital" target="_blank" class="social-icon">
+                        <img src="./img/twitch_2.png" alt="Twitch Icon" class="social-icon-img">
+                    </a>
+
+                    </div>
+          
+          
+                    <!-- Wrapper for slide 5 -->
+                    <div class="swiper-slide">
+                        <!-- Slide content -->
+                        <img class="image" src="./img/Warrior.jpg" alt="">
+                        <p>Christian/Father - All are welcome to join the fun. Love many types of games and people- sometimes stream for a hour sometimes a whole lot more. Founder of Blessingboat.com - apply today for the next month.</p>
+
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+              
+                          <div class="details">
+                            <span class="name">Warrior of light777</span>
+                          </div>
+
+                           <!-- Social icon -->
+                    <a href="https://www.twitch.tv/warrioroflight" target="_blank" class="social-icon">
+                        <img src="./img/twitch_2.png" alt="Twitch Icon" class="social-icon-img">
+                    </a>
+
+                    </div>  
+          
+          
+          
+                    <!-- Wrapper for slide 6 -->
+                    <div class="swiper-slide">
+                        <!-- Slide content -->
+                        <img class="image" src="./img/FinalDiamond01.jpeg" alt="">
+                        <p>Hi! I do variety streams where I do and say a bunch of shenanigans, I mostly play survival shooters. Come if you feel like vibin! God bless you all.</p>
+
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+              
+                          <div class="details">
+                            <span class="name">FinalDiamond01</span>
+                          </div>
+
+                           <!-- Social icon -->
+                    <a href="https://www.twitch.tv/finaldiamond01" target="_blank" class="social-icon">
+                        <img src="./img/twitch_2.png" alt="Twitch Icon" class="social-icon-img">
+                    </a>
+                    
+                    </div>
+          
+          
+          
+                    <!-- Wrapper for slide 7 -->
+                    <div class="swiper-slide">
+                        <!-- Slide content -->
+                        <img class="image" src="./img/Maejlin777.png" alt="">
+                        <p>Welcome to my stream! I am a Christian guy who loves to game. I play Marvel Rivals. Hope to see you in the chat! I enjoy playing with viewers so if you want to play with me, I will most likely say sure. God Bless you! (All Follower emotes are made by star_exx_studios)</p>
+
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+              
+                          <div class="details">
+                            <span class="name">maejlin777</span>
+                          </div>
+
+                           <!-- Social icon -->
+                    <a href="https://www.twitch.tv/maejlin777" target="_blank" class="social-icon">
+                        <img src="./img/twitch_2.png" alt="Twitch Icon" class="social-icon-img">
+                    </a>
+
+                    </div>
+          
+          
+          
+                    <!-- Wrapper for slide 8 -->
+                    <div class="swiper-slide">
+                        <!-- Slide content -->
+                        <img class="image" src="./img/Legi0n117.jpeg" alt="">
+                        <p>Heyo I'm Legion aka steve, I'm just a shy guy that streams a variety of games, full-time multi-streamer and content creator, and a Follower of Christ drop a Follow!</p>
+
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+              
+                          <div class="details">
+                            <span class="name">LegiOn117</span>
+                          </div>
+
+
+                           <!-- Social icon -->
+                    <a href="https://www.twitch.tv/legi0n117" target="_blank" class="social-icon">
+                        <img src="./img/twitch_2.png" alt="Twitch Icon" class="social-icon-img">
+                    </a>
+
+                    </div>
+
+
+                    <!-- Wrapper for slide 8 -->
+                    <div class="swiper-slide">
+                        <!-- Slide content -->
+                        <img class="image" src="./img/cropped-BB_LOGO_1920x1080.jpg" alt="">
+                        <p>We are a group of Christian based streamers that get together once a month and help non-affilates to reach affiliate status if they so desire. We also include smaller streamers who want to grow as well. Partners are always welcome to particpate and spread the event to their communities.</p>
+
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+              
+                          <div class="details">
+                            <span class="name">BlessingBoat</span>
+                          </div>
+
+
+                           <!-- Social icon -->
+                    <a href="https://www.twitch.tv/blessingboat" target="_blank" class="social-icon">
+                        <img src="./img/twitch_2.png" alt="Twitch Icon" class="social-icon-img">
+                    </a>
+
+                    </div>
+                    
+                </div>
+          
+                <!-- Pagination (Dots) -->
+                <div class="swiper-pagination"></div>
+          
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </section>
+    
+        <!-- Swiper JS -->
+        <script src="./js/swiper-bundle.min.js"></script>
+    
+        <!-- JavaScript -->
+        <script>
+            const swiper = new Swiper('.swiper-container', {
+    loop: true,           // Enable looping of slides
+    slidesPerView: 1,     // Show one slide at a time
+    spaceBetween: 20,     // Adjust space between slides
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,  // Make pagination clickable
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',  // Next button selector
+        prevEl: '.swiper-button-prev',  // Previous button selector
+    },
+});
+        </script>
+    </section>
+
+
+
+
+
+    <!--Join us-->
+    <section id="join">
+        <h2>Join Us</h2>
+        <p>Come aboard Blessing Boat and join a community that inspires, supports, and uplifts Christian streamers. <br> Whether you're just starting your streaming journey or you're an experienced content creator, there's a place for you here. <br> Together, we can grow, connect, and share the light of Christ through our online presence.</p>
+        <div class="container">
+            <form action="https://formspree.io/f/xwplrkgw" method="POST">
+                <label>Twitch Name:</label>
+                <input type="text" placeholder="Twitch Name" required>
+                
+                <label>Twitch URL:</label>
+                <input type="url" placeholder="Twitch URL" required>
+                
+                <label>First Name:</label>
+                <input type="text" placeholder="First Name" required>
+                
+                <label>Last Name:</label>
+                <input type="text" placeholder="Last Name" required>
+                
+                <label>Email:</label>
+                <input type="email" placeholder="Email" required>
+                
+                <label>Discord ID with Number:</label>
+                <input type="text" placeholder="Discord ID with Number" required>
+                
+                <label>How many followers:</label>
+                <input type="number" placeholder="Number of followers" required>
+                
+                <label>Are you an affiliate:</label>
+                <select>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+                
+                <label>Would you contribute $5 or more:</label>
+                <select>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+                
+                <label>Are you flexible on your time?</label>
+                <select>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+                
+                <label>Do you agree you will NOT swear or have guests that swear?</label>
+                <select>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            
+                <label>In your own words, what is the Gospel to you:</label>
+                <textarea rows="3"></textarea>
+                
+                <label>How did you hear about us?</label>
+                <input type="text" placeholder="How did you hear about us?">
+                
+                <button type="submit">Click here to SUBMIT.</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!--Footer-->
+    <footer>
+        <p>&copy; 2025 Blessing Boat. All rights reserved.</p>
+        <div class="socials">
+            <a href="https://www.facebook.com/blessboat" target="_blank"><img src="./img/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com/boatblessing" target="_blank"><img src="./img/twitter.png" alt="Twitter"></a>
+            <a href="https://www.youtube.com/@blessingboat" target="_blank"><img src="./img/youtube.png" alt="YouTube"></a>
+            <a href="https://twitch.tv/blessingboat" target="_blank"><img src="./img/twitch.png" alt="Twitch"></a>
+        </div>
+    </footer>
+
+
+
+</body>
+<style>
+
+    /*Main*/
+
+    html {
+        scroll-behavior: smooth; /* This enables smooth scrolling */
+    }
+
+    section {
+        background: white;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #home, #events {
+        padding: 150px; /* Keep padding for other sections */
+    }
+
+    #Particpants{
+        padding: 300px;
+    }
+
+    #join {
+        padding: 100px; /* Apply specific padding to the 'Join Us' section */
+    }
+
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color: #f4f4f4;
+    }
+
+    header {
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* Centers everything horizontally */
+    padding: 20px;
+    background-color: #004080;
+    position: relative;
+}
+
+
+
+
+
+
+/*Navbar*/
+
+.logo img{
+    height: 70px;
+    width: auto;
+    position: relative;  /* Makes the logo fixed to the left side */
+    left: 20px;  /* Adjust this to your preference */
+}
+
+.navbar {
+    margin-left: 28em;
+    flex-grow: 1;  /* Allows navbar to fill the remaining space */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 37px;  /* Spacing between navbar items */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;  /* Adjust color as needed */
+    font-size: 18px;  /* Adjust font size */
+}
+
+
+
+
+
+
+
+    /*Clock timer*/
+
+    .clock-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background: #004080;
+        color: #fff;
+        border-radius: 10px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .clock {
+        display: flex;
+        gap: 20px;
+        font-size: 3rem; /* Increased from 2rem to 3rem */
+        font-weight: bold;
+    }
+
+    .clock div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .label {
+        font-size: 1.5rem; /* Increased from 1rem to 1.5rem */
+    
+    }
+
+
+
+
+
+
+    /*Form*/
+
+    .container {
+        background-color: #004080;
+        padding: 20px;
+        border-radius: 10px;
+        width: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 0 auto; /* Centers the form */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    form {
+        width: 100%;
+    }
+    label {
+        color: white;
+        font-weight: bold;
+        display: block;
+        margin-top: 10px;
+    }
+    input, select, textarea {
+        width: 90%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    button {
+        background-color: #fff;
+        color: black;
+        padding: 10px;
+        border: none;
+        width: 92.8%;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+
+
+
+
+    /*Event Particpants*/
+
+    #Participants {
+    padding: 100px 60px;  /* Adjusted padding for better spacing */
+    }
+
+    .Participants {
+    position: relative;
+    max-width: 1000px;  /* Set max-width for the testimonial section */
+    width: 100%;
+    padding: 50px 0;
+    margin: 0 auto; /* Centers the testimonial section */
+    display: flex;
+    justify-content: center;  /* Centers swiper container horizontally */
+    align-items: center;      /* Centers swiper container vertically */
+    height: 500px; /* Fixed height for the testimonial section */
+    overflow: hidden; /* Hide overflow to only show one slide at a time */
+}
+
+.Participants .swiper-container {
+    width: 100%;  /* Full width */
+    height: 100%;  /* Full height */
+}
+
+.Participants .swiper-wrapper {
+    display: flex;  /* Display slides in a row */
+    width: 100%;
+    height: 100%;  /* Full height for swiper-wrapper */
+}
+
+.Participants .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centers content inside each slide */
+    justify-content: center; /* Centers content vertically inside each slide */
+    text-align: center;
+    padding: 40px;  /* Adjust padding to make the card bigger */
+    gap: 20px;
+    max-width: 100%;  /* Prevent overflow */
+    overflow: hidden; /* Prevent overflow issues */
+    box-sizing: border-box;
+    flex-shrink: 0; /* Prevent shrinking */
+    width: 100%;  /* Ensure each slide takes up the full width */
+}
+
+.Participants .image {
+    height: 200px;  /* Increased image size */
+    width: 200px;   /* Increased image size */
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.Participants .slide p {
+    font-size: 16px;  /* Increased font size for better readability */
+    font-weight: 400;
+    color: #333;
+    max-width: 700px;  /* Prevent text from becoming too wide */
+    margin: 0 auto;
+    padding: 0 20px;  /* Prevent text from touching edges */
+}
+
+.Participants .quote-icon {
+    font-size: 35px;  /* Increased icon size */
+    color: #4070f4;
+}
+
+.Participants .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details .name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+
+.social-icon-img {
+    width: 40px;  /* Initial width */
+    height: 40px; /* Initial height */
+    object-fit: cover; /* Keeps the aspect ratio intact */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.social-icon-img:hover {
+    transform: scale(1.2);  /* Scales the icon to 120% of its original size */
+}
+
+
+.nav-btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+
+.nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn::after,
+.nav-btn::before {
+    font-size: 25px;
+    color: #fff;
+}
+
+.swiper-pagination-bullet {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #4070f4;
+}
+
+/* Ensure navigation buttons are visible */
+.swiper-button-next, .swiper-button-prev {
+    color: #4070f4;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .Participants .swiper-slide {
+        padding: 20px;
+    }
+
+    .Participants .swiper-slide p {
+        padding: 0 20px;
+    }
+
+    .nav-btn {
+        display: none;  /* Hide navigation buttons on smaller screens */
+    }
+}
+
+
+
+/*footer*/
+footer {
+        background: #004080;
+        color: white;
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        height: 5em;
+        width: 99%;
+    }
+
+.socials {
+        margin-top: 10px;
+    }
+
+    .socials a {
+        margin: 0 10px;
+        display: inline-block;
+    }
+
+    .socials img {
+        width: 25px; /* Adjust icon size */
+        height: 25px;
+        transition: transform 0.3s ease; /* Smooth transition for scaling */
+    }
+
+    .socials img:hover {
+    transform: scale(1.2);  /* Scales the icon to 120% of its original size */
+}
+
+
+</style>
+</html>
